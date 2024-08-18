@@ -7,6 +7,7 @@ import '../../../core/config/assets/app_images.dart';
 import '../../../core/config/assets/app_vectors.dart';
 import '../../../core/config/theme/app_colors.dart';
 import '../bloc/theme_cubit.dart';
+import 'package:musicly/presentation/authentication/pages/signup_or_sign.dart';
 
 class ChooseModePage extends StatelessWidget {
   const ChooseModePage({super.key});
@@ -121,7 +122,6 @@ class ChooseModePage extends StatelessWidget {
                         )
                       ],
                     ),
-
                   ]
                 ),
                 const SizedBox(
@@ -132,8 +132,7 @@ class ChooseModePage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (BuildContext context) =>
-                                  const ChooseModePage()));
+                              builder: (BuildContext context) => const SignupOrSignPage()));
                     },
                     title: 'Continue')
               ],
